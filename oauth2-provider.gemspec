@@ -18,19 +18,19 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # Main dependencies
-  s.add_dependency 'activesupport', '4.2.1'
-  s.add_dependency 'addressable', '~>2.3.8'
-  s.add_dependency 'httpauth', '~> 0.1'
+  s.add_dependency 'activesupport'#, '4.2.1'
+  s.add_dependency 'addressable'#, '~>2.3.8'
+  s.add_dependency 'httpauth'#, '~> 0.1'
 
-  s.add_development_dependency 'rack-test', '~>0.5.7'
-  s.add_development_dependency 'activerecord', '4.2.1'
-  s.add_development_dependency 'rspec', '~>2.9.0'
-  s.add_development_dependency 'mocha', '~>0.9.12'
-  s.add_development_dependency 'rake', '~>10.14.2'
-  s.add_development_dependency 'sqlite3', '~>1.3.5'
-  s.add_development_dependency 'timecop', '~>0.3.4'
-  s.add_development_dependency 'yajl-ruby', '~>0.7.5'
-  s.add_development_dependency 'mongoid', '~>4.0.2'
-  s.add_development_dependency 'bson', '3.1.0'
-  s.add_development_dependency 'bson_ext', '1.5.1'
+  s.add_development_dependency 'rack-test'#, '~>0.5.7'
+  s.add_development_dependency 'activerecord'#, '4.2.1'
+  s.add_development_dependency 'rspec'#, '~>2.9.0'
+  s.add_development_dependency 'mocha'#, '~>0.9.12'
+  s.add_development_dependency 'rake'#, '~>10.14.2'
+  s.add_development_dependency 'sqlite3'#, '~>1.3.5'
+  s.add_development_dependency 'timecop'#, '~>0.3.4'
+  s.add_development_dependency 'yajl-ruby'#, '~>0.7.5'
+  s.add_development_dependency 'mongoid'#, '~>4.0.2'
+  s.add_development_dependency 'bson'#, '3.1.0'
+  s.add_development_dependency 'bson_ext'#, '1.5.1'
 end
