@@ -5,7 +5,7 @@ module OAuth2::Provider::Rails::ControllerAuthentication
 
   module ClassMethods
     def authenticate_with_oauth(options = {})
-      around_filter AuthenticationFilter.new(options.delete(:scope)), options
+      around_action AuthenticationFilter.new(options.delete(:scope)), options
     end
 
     class AuthenticationFilter
@@ -13,7 +13,7 @@ module OAuth2::Provider::Rails::ControllerAuthentication
         @scope = scope
       end
 
-      def filter(controller, &block)
+      def around(controller, &block)
         controller.request.env['oauth2'].authenticate_request! :scope => @scope, &block
       end
     end
